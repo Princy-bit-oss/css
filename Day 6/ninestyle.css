@@ -1,0 +1,166 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f7f3ef, #fff);
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background: rgb(66, 66, 49);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffcc80;
+}
+
+.company-name {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Menu Bar */
+.menu-bar {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu-bar a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+.menu-bar a:hover {
+    color: #ffcc80;
+}
+
+/* Hero Section (for business look) */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: #4e342e;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #777;
+    font-size: 16px;
+}
+
+/* Card Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+}
+
+/* Card */
+.card {
+    width: 250px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Card Image */
+.card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Card Content */
+.card-content {
+    padding: 30px;
+}
+
+.card h2 {
+    color: #4e342e;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+/* Price */
+.price {
+    color: #2e7d32;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Button (NEW - important for business) */
+.btn {
+    margin-top: 12px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background: #4e342e;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #eec5b8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .menu-bar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

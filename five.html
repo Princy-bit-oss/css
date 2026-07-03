@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.nav-links {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    /* background-color: lightblue; */
+    align-items: center;
+}
+
+.hamburger {
+    font-size: large;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    left: 40vw;
+    /* background-color: rgb(104, 184, 211); */
+    align-items: center;
+    width: 100vw;
+    font-size: 20px;
+    gap: 1px;
+}
+
+.nav-links.active li:hover {
+    color: rgb(45, 100, 138);
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: white;
+    border: solid 1px rgb(45, 100, 138);
+}
+
+.nav-links li {
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(45, 100, 138);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px white;
+
+
+
+
+}
+
+@media (min-width: 768px) {
+
+    .hamburger {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+    }
+
+    .nav-links {
+        height: 2rem;
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        margin-right: 20px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .nav-links li {
+        display: flex;
+        /* width: 10vw; */
+        border-radius: 10px;
+    }
+
+    .nav-links li:hover {
+        color: rgb(45, 100, 138);
+        font-size: 22px;
+        cursor: pointer;
+        border-radius: 10px;
+        background-color: white;
+        border: solid 1px rgb(45, 100, 138);
+    }
+}
+
+
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 2vw;
+
+    list-style: none;
+}
+
+@media(min-width:768px) {
+    .hamburger {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+
+    }
+}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.webp" alt="logo image">
+        </div>
+        <div class="hamburger">☰</div>
+        <ul class="nav-links  ">
+            <li>Home</li>
+            <li>Services</li>
+            <li>Products</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <script>
+        const hamburger=document.querySelector(".hamburger");
+        const navLinks=document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click",()=>{
+            navLinks.classList.toggle("active");
+        })
+    </script>
+</body>
+</html>

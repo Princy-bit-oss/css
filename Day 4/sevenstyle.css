@@ -1,0 +1,133 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:40px;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:320px;
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,0.15);
+}
+
+.image{
+    width:100%;
+    height:230px;
+    overflow:hidden;
+}
+
+.image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.card:hover .image img{
+    transform:scale(1.05);
+}
+
+.content{
+    padding:18px 20px 10px;
+}
+
+.name{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+}
+
+.name h3{
+    font-size:18px;
+    font-weight:600;
+    color:#333;
+}
+
+.name p{
+    color:#ff4d6d;
+    font-size:18px;
+    font-weight:600;
+    white-space:nowrap;
+}
+
+.rating{
+    padding:0 20px 18px;
+    color:#f4b400;
+    font-size:15px;
+}
+
+.rating p{
+    color:#666;
+}
+
+button{
+    width:calc(100% - 40px);
+    margin:0 20px 20px;
+    height:48px;
+    border:none;
+    border-radius:10px;
+    background:#ff4d6d;
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#e6395b;
+}
+
+button img{
+    width:20px;
+    filter:brightness(0) invert(1);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:100%;
+        max-width:340px;
+    }
+
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Profile</title>
+    <style>
+        * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Poppins,sans-serif;
+}
+body {
+  background-color: gray;
+}
+
+.profile-left-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+  flex: 30%;
+  color: white;
+  background-color: #1a315a;
+}
+
+.wrapper-div {
+  display: flex;
+  place-self: center;
+  background-color: white;
+  width: 95vw;
+  max-width: 800px;
+  height: auto;
+  padding: 10px;
+  gap: 10px;
+}
+
+.img-div{
+  margin-top: 10px;
+}
+.img-div img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px double white;
+  border-radius: 50%;
+}
+
+.contact-div,
+.edu-div,.skills-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  display: flex;
+  place-self: start;
+  font-weight: 600;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  margin: 10px 0px;
+}
+.contact-email,
+.contact-phone,
+.address {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  gap: 10px;
+}
+.contact-phone img,
+.contact-email img,
+.address img {
+  width: 18px;
+  height: 18px;
+  color: white;
+}
+
+.education,.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+  width: 90%;
+}
+.profile-right-div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 70%;
+}
+.right-top-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+span {
+  color: #233158;
+  font-weight: 500;
+}
+
+.right-bottom-div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 2rem;
+  padding: 10px;
+}
+
+.profile p:last-of-type {
+  color: rgb(86, 85, 85);
+  text-align: justify;
+  line-height: 25px;
+}
+
+.workex-div ul,
+.achievement-div ul,
+.hobbies-div ul {
+  color: rgb(86, 85, 85);
+  line-height: 25px;
+  margin-left: 10px;
+}
+
+    </style>
+    <link rel="stylesheet" href="profileLeftStyles.css" />
+    <link rel="stylesheet" href="profileRightStyles.css" />
+  </head>
+  <body>
+    <!-- wrapper div -->
+    <div class="wrapper-div">
+      <!-- left div -->
+      <div class="profile-left-div">
+        <div class="img-div">
+          <img src="profile.jpeg" alt="profile-img" />
+        </div>
+        <!-- contacts -->
+        <div class="contact-div">
+          <!-- phone -->
+          <p class="title">CONTACT</p>
+          <hr />
+          <div class="contact-phone">
+            <img src="image.png" alt="" />
+            <p>+91-9813064080</p>
+          </div>
+
+          <!-- email -->
+          <div class="contact-email">
+            <img src="ic--outline-email.png" alt="email-img" />
+            <p>nprincy32@gmail.com</p>
+          </div>
+
+          <!-- address -->
+          <div class="address">
+            <img src="placeholder.png" alt="" />
+            <p>Sec-11-12 , Panipat , Haryana</p>
+          </div>
+        </div>
+
+        <!-- education -->
+        <div class="edu-div">
+          <p class="title">EDUCATION</p>
+          <hr />
+          <ul class="education">
+            <li>Pursuing Bachelor's Of Computer Application,KUK University  </li>
+            <li>12th(Senior Secondary),SDVM,Panipat</li>
+            <li>10th(High School),SDVM,Panipat</li>
+          </ul>
+        </div>
+
+        <div class="skills-div">
+          <p class="title">SKILLS</p>
+          <hr />
+          <ul class="skills">
+            <li>Communication and Interpersonal Skills</li>
+            <li>Programming Basics : C Programming , Python , HTML and CSS</li>
+            <li>MS Excel , SQL and Basic Computer Operations</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- right div -->
+      <div class="profile-right-div ">
+        <!-- right-top -->
+        <div class="right-top-div ">
+          <h1>Princy <span></span></h1>
+          <p>A Student of Kurukshetra University</p>
+        </div>
+        <!-- right-bottom-div -->
+        <div class="right-bottom-div">
+
+          <!-- profile -->
+            <div class="profile">
+                <p class="title">Profile</p>
+                <hr>
+                <p>BCA Fresher with a strong interest in Web Development and Technology. I have knowledge of HTML,CSS and basic programming concepts. I am eager to learn new skills,take on challenges,and contribute to a prefessional work environment. Looking for an opportunity to start my career,gain practical experince,and grow as a developer.</p>
+            </div>
+
+            <!-- work experience -->
+          <div class="workex-div">
+            <p class="title">Work-Experience</p>
+            <hr />
+            <ul>
+              <li>Motivated and enthusiastic individual with a months of experince as an Admission Counsellor. Process strong communication and Interpersonal skills along with a keen interest in programming.Eager to learn,grow and contribute to a proffesional environment.</li>
+            </ul>
+          </div>
+
+          <!-- achievements -->
+          <div class="achievement-div">
+            <p class="title">Achivements</p>
+            <hr />
+            <ul>
+              <li>Successsfully completed 5 months as an Admission Counsellor at CTPL. </li>
+              <li>Developed strong communication and customer interaction skills.</li>
+              <li>Studied Programming languages : C,Python,HTML,CSS etc...</li>
+              <li>Continuously learning and improving my programming skills.</li>
+            </ul>
+          </div>
+
+          <!-- hobbies -->
+          <div class="hobbies-div">
+            <p class="title">Hobbies & Interests</p>
+            <hr />
+            <ul>
+              <li>Reading </li>
+              <li>Dancing</li>
+              <li>Exploring New Things</li>
+              <li>Travelling</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
